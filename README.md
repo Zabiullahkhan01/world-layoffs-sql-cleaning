@@ -37,7 +37,7 @@ The original dataset contains information about layoffs across various companies
 3. **Removed duplicate records** while maintaining data relationships
 
 ### Phase 2: Data Standardization
-1. **Text cleaning**: Removed leading/trailing whitespaces using `TRIM()`
+1. **Text cleaning**: Removed leading/trailing whitespaces using `TRIM()` and `trail()` method
 2. **Industry standardization**: Consolidated similar industry names (e.g., "Crypto" vs "Cryptocurrency")
 3. **Country normalization**: Fixed formatting inconsistencies (removed trailing periods)
 4. **Date formatting**: Converted text dates to proper SQL DATE datatype for time-series analysis
@@ -62,12 +62,10 @@ The original dataset contains information about layoffs across various companies
 world-layoffs-sql-cleaning/
 │
 ├── README.md                              # Project documentation
+├──layoffs.csv                             # raw csv file
 ├── world_layoff_sql_data_cleaning_project.sql  # Main SQL script
 ├── docs/                                  # Additional documentation
 │   ├── data-dictionary.md                # Column definitions
-│   └── cleaning-methodology.md           # Detailed process explanation
-└── sample_outputs/                       # Sample results (if applicable)
-    └── cleaned_data_sample.csv           # Sample of cleaned data
 ```
 
 ## 🚀 How to Run the Project
@@ -111,9 +109,9 @@ world-layoffs-sql-cleaning/
 - **Missing data handling**: Reduced null values through intelligent imputation and strategic removal
 
 ### Key Metrics
-- **Records processed**: [Insert actual number if known]
-- **Duplicates removed**: [Insert actual number if known]
-- **Null values handled**: [Insert actual number if known]
+- **Records processed**: 
+- **Duplicates removed**:
+- **Null values handled**: 
 - **Data integrity**: 100% maintained through staging table approach
 
 ## 🔍 Sample Queries
@@ -176,10 +174,9 @@ Feel free to fork this repository and submit pull requests for:
 
 ## 📧 Contact
 
-**[Your Name]**  
-- LinkedIn: [Your LinkedIn Profile]  
-- Email: [Your Email]  
-- Portfolio: [Your Portfolio Website]
+**[Zabiullah Khan]**  
+- LinkedIn: [https://www.linkedin.com/in/zabiullah-khan-2852702ba]  
+- Email: [zabiullah.khan2002@gmail.com]  
 
 ---
 
